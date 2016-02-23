@@ -1,0 +1,241 @@
+?<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Home</title>
+  	<meta charset="utf-8">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			$('.mp-slider').cycle({
+				pager: '#mp-pags',
+				timeout:7000,
+				pagerAnchorBuilder: pagerFactory
+				});
+			function pagerFactory(index, slide) {
+				var titles = []
+				titles[0] = $("#mp-pags-cont li:eq(0)").text()
+				titles[1] = $("#mp-pags-cont li:eq(1)").text()
+				titles[2] = $("#mp-pags-cont li:eq(2)").text()
+			return '<li><a href="#">'+(titles[index])+'</a></li>';
+			}; 
+		})
+	</script>
+<!--[if lt IE 8]>
+   <div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body id="">
+<a href="Login1.php">Ingresa a tu cuenta</a>
+<!-- Header -->
+<header>
+    <div class="inner">
+        <h1 class="logo"><a href="home.html">Bancolam</a></h1>
+        
+     
+	
+	</div>
+    <!---Login--->
+	
+    <!---Termina Login--->
+    <nav>
+        <ul class="sf-menu">
+            <li class="current"><a href="home.html">Inicio</a></li>
+            <li><a href="about.html">Economía</a></li>
+            <li>
+                <a href="services.html">Tarjetas</a>
+                <ul>
+                    <li><a href="services.html">Tarjeta de Crédito</a></li>
+                    <li><a href="services.html">Tarjeta de Débito</a></li>
+                   
+                </ul>
+            </li>
+             <li>
+                        <a href="products.html">Seguros</a>
+                        <ul>
+                            <li><a href="products.html">Seguro de Vida</a></li>
+                            <li><a href="products.html">Seguro para Autos</a></li>
+                             <li><a href="products.html">Seguro para Hogar</a></li>
+                              <li><a href="products.html">Seguro contra Fraude</a></li>
+                        </ul>
+                    </li>
+            <li><a href="Contactanos1.php">Contactanos</a></li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+    <div class="slider-container">
+        <div class="mp-slider">
+            <div><img src="images/1.png" alt=""><a href="services.html">Leer más</a></div>
+            <div><img src="images/2.png" alt=""><a href="products.html">Leer más</a></div>
+            <div><img src="images/3.png" alt=""><a href="about.html">Leer más</a></div>
+        </div>
+    </div>
+</header>
+<!-- Content -->
+<section id="content"><div class="ic"></div>
+    <div class="container_24">
+    	<div class="grid_24 content-border">
+            <div class="top-content-box">
+                <ul id="mp-pags-cont">
+                    <li><a href="services.html">Tarjetas</a></li>
+                    <li><a href="products.html">Seguros</a></li>
+                    <li><a href="about.html">Información Monetaria</a></li>
+                </ul>
+                <ul id="mp-pags"></ul>
+            </div>
+            <div class="top-row">
+            	<h1 class="aligncenter">La navidad a llegado a Bancolam!!!!</h1>
+                <div class="wrapper">
+                	<div class="grid_5 prefix_1 alpha">
+                    	<div class="wrapper">
+                        	<span class="dropcap color-1">.</span>
+                            <div class="extra-wrap">
+                            	<strong class="str-1 color-1">
+                                	Usa una cuenta flexible esta es una cuenta con la que puedes ...</strong>
+                            	
+                                <a href="services.html" class="link">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_5">
+                    	<span class="dropcap color-2">.</span>
+                            <div class="extra-wrap">
+                            <strong class="str-1 color-2">
+                               Obten la solución completa de valor en tus finanzas. Ser....
+
+
+                            </strong>
+                            <a href="services.html" class="link">read more</a>
+                        </div>
+                    </div>
+                    <div class="grid_5">
+                    	<span class="dropcap color-3">.</span>
+                        <div class="extra-wrap">
+                            <strong class="str-1 color-3">
+                               Fondos de Inversión una posibilidad para conformar....
+                            </strong>
+                            <a href="products.html" class="link">read more</a>
+                        </div>
+                    </div>
+                    <div class="grid_7 suffix_1 omega">
+                    	<span class="dropcap color-4">D.</span>
+                        <div class="extra-wrap">
+                            <strong class="str-1 color-4">
+                                Como Cliente Distinguido Bancolam, disfrute de una solución completa que le añade....
+                            </strong>
+                            <a href="home.html" class="link">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper indent-top">
+            	<article class="grid_15 suffix_1 prefix_1 alpha">
+                	<h2>Feliz Navidad te desea Bancolam!</h2>
+                    <p><strong>Imagine todo lo que podría obtener con una solución completa de valor en sus finanzas.</strong><br>
+                      <br>
+                     
+                      Ser <strong>Cliente DistinguidoBancolam </strong> es contar con un sin número de beneficios que no sólo se traducen en servicio y atención preferente.<br>
+                      <br>
+                      Es contar con acceso a una gama de productos y servicios exclusivos que representan un verdadero ahorro para usted.<br>
+                      <br>
+                    Como <strong>Cliente Distinguido Bancolam</strong> disfrute de una solución completa que le añade valor a su relación con nosotros, en base a nuestros 3 pilares fundamentales:</p>
+                    <ol>
+                      <li><strong>Atención preferente en sucursal </strong>y a través de nuestra Línea Directa Bancolam, las 24 horas del día.</li><br>
+                      <li><strong>Servicio preferente</strong> para que concluya sus trámites de forma rápida y sencilla, resuelva sus dudas y seamos para usted un aliado de valor en el manejo de sus finanzas.</li><br>
+                      <li>Y los mejores <strong>productos en condiciones preferentes</strong> las cuales representan importantes ahorros y beneficios para usted.</li><br>
+                    </ol>
+                   </figure>
+                            
+              <article class="grid_6 suffix_1 omega">
+                	<h2>Últimas Noticias:</h2>
+                    <dl class="news-list">
+                    	<dt>
+                        	DIC.<strong>8</strong>, 2015</dt>
+                        <dd>El día de hoy el profesor de Programación Web le pondra 10 a su almuno con el número de matrícula 1510001.</dd>
+                        <dt>
+                        	Dic.<strong>6</strong>, 2015
+                        </dt>
+                        <dd class="last">
+                        	Mañana Lunes 7 de Diciembre la Universidad Politécnica de Tulancingo realizara su posada a partir de las 11 de la mañana.</dd>
+                    </dl>
+                   
+                </article>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!--Copiar---->
+<aside>
+	<div class="container_24">
+    	<div class="wrapper">
+        	<div class="grid_24 aside-bg">
+            	<div class="wrapper">
+                	<article class="grid_5 prefix_1 alpha">
+                    	<h4>Economía:</h4>
+                        <ul class="list-1">
+                        	<li><a href="about.html">Informate de las monedas</a></li> 
+                            
+                        </ul>
+                    </article>
+                    <article class="grid_5">
+                    	<h4>Tarjetas:</h4>
+                        <ul class="list-1">
+                        	<li><a href="services.html">Tarjeta de Crédito</a></li>
+                            <li><a href="services.html">Tarjeta de Débito</a></li> 
+                        </ul>
+                    </article>
+                    <article class="grid_5">
+                    	<h4>Seguros:</h4>
+                        <ul class="list-1">
+                        	<li><a href="products.html">De vida</a></li> 
+                            <li><a href="products.html">Para autos</a></li> 
+                            <li><a href="products.html">del Hogar</a></li>
+                            <li><a href="products.html">de FRAUDE</a></li>
+                        </ul>
+                    </article>
+                    <article class="grid_8 omega">
+                    	<h4 class="pad-1">Contactanos:</h4>
+                        <blockquote class="quote">
+                        	<div class="inner">
+Somos empresarios de Balam.Inc, quienes colaboramos para satisfacer tus necesidades sin poner un pretexto encima.                            </div>
+                        </blockquote>
+                        <div class="author alignright pad-2">
+                        	<p>Angel Francisco Barrios Franco</p>
+                        	<p><span>( Empresario Bancolam)</span></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- Footer -->
+<footer>
+    <div class="copyright">
+        &copy; 2015 <strong >Balam.Inc</strong><br>
+        Malvados y Asociados.
+        
+    </div>
+    <ul class="social-list">
+    	<li><a href="www.facebook.com"><img src="images/social-link-1.jpg" alt=""></a></li>
+        <li><a href="www.twitter.com"><img src="images/social-link-2.jpg" alt=""></a></li>
+       
+    </ul>
+</footer>
+</body>
+</html>
